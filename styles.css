@@ -1,6 +1,47 @@
+@font-face {
+    font-family: "Roboto";
+    src:
+        url(Roboto/Roboto-VariableFont_wdth\,wght.ttf),
+        url(Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px 70px 100px;
+    background-color: #737582;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo.img {
+    height: 50px;
+    width: 100px;
+}
+
+.logo.title {
+    font-size: 16px;
+    width: 70px;
+}
+
+.addbook {
+    border-radius: 7px;
+    border-style: none;
+    height: 30px;
+    background-color:rgb(127, 129, 255);
+    font-weight: bold;
 }
 
 .readstatustoggle {
@@ -63,4 +104,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.bookcover{
+    width: 150px;
+    height: 200px;
+}
+
+.bookcontainer {
+    display: grid;
+    background-color: red;
+}
+
+.bookcard {
+
 }
