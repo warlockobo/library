@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
+    <dialog id="addBookDialog">
+        <form>
+            <p><label>Title:</label><input type="text" class="modalInput" id="addBookTitle"></p>
+            <p><label>Author:</label><input type="text" class="modalInput" id="addBookAuthor"></p>
+            <p><label>Pages:</label><input type="number" class="modalInput" id="addBookPages"></p>
+            <p><label>Read:  <input type="checkbox" class="modalInput" id="addBookRead"></label></p>
+            <div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="btnAddBook" value="default" type="submit">Add Book</button>
+            </div>
+        </form>
+    </dialog>
     <div class="container">
         <header>
             <img class="logo img" src="images/booklogo.png"/>
             <h1 class="logo title">Wittner's Library</h1>
-            <button class="addbook">Add Book</button>
+            <button class="addBookButton">Add Book</button>
         </header>
+        <div class="bookcontainer">
+            <!-- JS injection here-->
+        </div>
+
+
     </div>
 <script src="script.js"></script>    
 </body>

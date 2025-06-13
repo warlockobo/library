@@ -20,7 +20,7 @@ html, body {
 header {
     display: grid;
     grid-template-columns: 100px 70px 100px;
-    background-color: #737582;
+    background-color: #595b65;
     padding: 10px 10px 10px 10px;
     align-items: center;
     gap: 30px;
@@ -36,7 +36,7 @@ header {
     width: 70px;
 }
 
-.addbook {
+.addBookButton {
     border-radius: 7px;
     border-style: none;
     height: 30px;
@@ -106,16 +106,37 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.bookcover{
-    width: 150px;
-    height: 200px;
-}
-
 .bookcontainer {
-    display: grid;
-    background-color: red;
+    background-color: var(--mid-black);
+    background: #191919;
+    background: linear-gradient(
+        180deg,
+        rgba(25, 25, 25, 1) 0%,
+        rgba(21, 21, 21, 1) 50%,
+        rgba(18, 18, 18, 1) 100%
+    );
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-height: 100vh;
+    color: white;
+
 }
 
-.bookcard {
-
+.bookCard {
+  border: 5px solid var(--black-accent);
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: var(--black-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid white;
 }
