@@ -70,16 +70,16 @@ function createCard (book, bookcontainer) {
 
     const bookTitle = document.createElement("span");
     bookTitle.classList.add("bookTitle");
-    bookTitle.textContent = book.title;
-    console.log(book.title);
+    bookTitle.textContent = "Title: " + book.title;
+  
 
     const bookAuthor = document.createElement("div");
     bookAuthor.classList.add("bookAuthor");
-    bookAuthor.textContent = book.author;
+    bookAuthor.textContent = "Author: " + book.author;
 
     const bookPages = document.createElement("div");
     bookPages.classList.add("bookPages");
-    bookPages.textContent = book.pages;
+    bookPages.textContent = "Pages: " + book.pages;
 
     const readStatus = document.createElement("p");
     readStatus.classList.add("readStatus");
