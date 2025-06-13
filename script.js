@@ -85,9 +85,22 @@ function createCard (book, bookcontainer) {
     readStatus.classList.add("readStatus");
     readStatus.textContent = 'Read: ';
 
+    const switchLabel = document.createElement("label")
+    switchLabel.classList.add("readStatusToggle");
+
     const readStatusSpan = document.createElement("span");
     readStatusSpan.classList.add("readStatusSpan");
     readStatusSpan.textContent = book.read;
+
+    const readChange = document.createElement("input");
+    readChange.setAttribute('type', "checkbox");
+  
+    const sliderSpan = document.createElement("span");
+    sliderSpan.classList.add("slider");
+    sliderSpan.setAttribute('id', 'slider-round');
+
+    switchLabel.appendChild(readChange);
+    switchLabel.appendChild(sliderSpan);
 
     bookCard.appendChild(deleteBookBtn);
     bookCard.appendChild(bookInfo);
@@ -96,6 +109,7 @@ function createCard (book, bookcontainer) {
     bookCard.appendChild(bookPages);
     readStatus.appendChild(readStatusSpan);
     bookCard.appendChild(readStatus);
+    bookCard.appendChild(switchLabel);
 
     bookcontainer.appendChild(bookCard);
 };

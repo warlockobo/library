@@ -44,7 +44,7 @@ header {
     font-weight: bold;
 }
 
-.readstatustoggle {
+.readStatusToggle {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -52,7 +52,7 @@ header {
 }
 
 /* Hide default HTML checkbox */
-.readstatustoggle  input {
+.readStatusToggle  input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -98,11 +98,11 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+#slider-round {
   border-radius: 34px;
 }
 
-.slider.round:before {
+#slider-round:before {
   border-radius: 50%;
 }
 
@@ -139,4 +139,9 @@ input:checked + .slider:before {
   overflow-x: hidden;
   overflow-y: auto;
   border: 1px solid white;
+}
+
+.delete_book {
+  width: 20px;
+  height: 20px;
 }
