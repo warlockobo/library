@@ -55,6 +55,7 @@ btnAddBook.addEventListener("click", (event) => {
 });
 
 
+
 function createCard (book, bookcontainer) {
     const bookCard = document.createElement("div");
     bookCard.classList.add("bookCard");
@@ -94,6 +95,14 @@ function createCard (book, bookcontainer) {
 
     const readChange = document.createElement("input");
     readChange.setAttribute('type', "checkbox");
+    if (readStatusSpan.textContent === "yes") {
+      readChange.setAttribute ("checked", "checked");
+    };
+    
+    readChange.addEventListener("click", () => {
+      const isChecked = readChange.checked;
+      isChecked ? readStatusSpan.textContent = "yes" : readStatusSpan.textContent = "no";
+    });
   
     const sliderSpan = document.createElement("span");
     sliderSpan.classList.add("slider");
