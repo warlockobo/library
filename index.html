@@ -8,11 +8,11 @@
 </head>
 <body>
     <dialog id="addBookDialog">
-        <form>
-            <p><label>Title:</label><input type="text" class="modalInput" id="addBookTitle"></p>
-            <p><label>Author:</label><input type="text" class="modalInput" id="addBookAuthor"></p>
-            <p><label>Pages:</label><input type="number" class="modalInput" id="addBookPages"></p>
-            <p><label>Read:  <input type="checkbox" class="modalInput" id="addBookRead"></label></p>
+        <form novalidate>
+            <p><label for="addBookTitle">Title:</label><input type="text" class="modalInput" id="addBookTitle" required minlength="2" maxlength="200" placeholder="Enter book title"></p>
+            <p><label for="addBookAuthor">Author:</label><input type="text" class="modalInput" id="addBookAuthor" required minlength="2" maxlength="100" placeholder="Enter author name"></p>
+            <p><label for="addBookPages">Pages:</label><input type="number" class="modalInput" id="addBookPages" required min="1" max="10000" placeholder="Enter number of pages"></p>
+            <p><label for="addBookRead">Read:  <input type="checkbox" class="modalInput" id="addBookRead"></label></p>
             <div>
                 <button value="cancel" formmethod="dialog">Cancel</button>
                 <button id="btnAddBook" value="default" type="submit">Add Book</button>
